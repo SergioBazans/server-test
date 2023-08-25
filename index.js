@@ -39,7 +39,7 @@ app.post("/", (req, res) => {
   }
 });
 
-schedule.scheduleJob("0 8 * * *", () => {
+schedule.scheduleJob("*/2 * * * *", () => {
   console.log("It runs");
 });
 
